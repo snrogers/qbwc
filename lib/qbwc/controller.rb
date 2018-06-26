@@ -33,7 +33,7 @@ module QBWC
                     :response_tag => "#{wash_out_xml_namespace}authenticateResponse"
 
         soap_action 'sendRequestXML', :to => :send_request,
-                    :args   => {:ticket => :string, :strHCPResponse => :string, :strCompanyFilename => :string, :qbXMLCountry => :string, :qbXMLMajorVers => :string, :qbXMLMinorVers => :string},
+                    :args   => {:ticket => :string, :strHCPResponse => :string, :strCompanyFileName => :string, :qbXMLCountry => :string, :qbXMLMajorVers => :string, :qbXMLMinorVers => :string},
                     :return => {'tns:sendRequestXMLResult' => :string},
                     :response_tag => "#{wash_out_xml_namespace}sendRequestXMLResponse"
 
